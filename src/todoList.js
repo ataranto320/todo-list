@@ -1,4 +1,6 @@
 import React from 'react';
+import TodoItem from './todoItem';
+// ../
 
 class TodoList extends React.Component {
 
@@ -10,7 +12,7 @@ class TodoList extends React.Component {
                 {
                     todos.map((_todo, _index) => {
                         return(
-                            <div key={_index}>{_todo}</div>
+                            <TodoItem key={_index} todo={_todo}></TodoItem>
                         )
                     })
                 }
