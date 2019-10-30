@@ -22,7 +22,7 @@ class App extends React.Component {
     <div>
       <TodoList></TodoList>
       <TodoItem></TodoItem>
-      <AddTodo></AddTodo>
+      <AddTodo addTodoFn={this.addTodo}></AddTodo>
     </div>
     );
   }
@@ -41,8 +41,11 @@ class App extends React.Component {
   }
 
   //function to add items to todos
-  addTodo = (todo) => this.setState({ todos: [...this.state.todos, todo] })
-
+  addTodo = async (todo) => {
+     await this.setState({ todos: [...this.state.todos, todo] })
+     localStorage.setItem("todos", JSON.stringify(this.state.todos))
+     console.log(localStorage.getItem("todos"));
+  }
 }
 
 export default App;

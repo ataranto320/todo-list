@@ -27,7 +27,7 @@ class AddTodo extends React.Component {
     //function to submit form
     submitTodo = (e) => {
         e.preventDefault();
-        console.log("submit", this.state);
+        this.props.addTodoFn(this.state.todo);
     }
 
 }
