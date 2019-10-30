@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoList from './todoList';
 import TodoItem from './todoItem';
-import addTodo from './addTodo';
+import AddTodo from './addTodo';
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -22,6 +22,7 @@ class App extends React.Component {
     <div>
       <TodoList></TodoList>
       <TodoItem></TodoItem>
+      <AddTodo></AddTodo>
     </div>
     );
   }
