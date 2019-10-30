@@ -13,7 +13,7 @@ class TodoItem extends React.Component {
     
     //toggle if todo is completed or not
     toggleTodo = () => {
-
+        this.props.updateTodoFn(this.props.todo);
     }
 
 }

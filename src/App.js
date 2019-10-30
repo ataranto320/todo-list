@@ -20,7 +20,7 @@ class App extends React.Component {
   redner() {
     return (
     <div>
-      <TodoList todos={this.state.todos}></TodoList>
+      <TodoList updatedTodoFn={this.updateTodo} todos={this.state.todos}></TodoList>
       <TodoItem></TodoItem>
       <AddTodo addTodoFn={this.addTodo}></AddTodo>
     </div>
