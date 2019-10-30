@@ -7,12 +7,13 @@ class TodoItem extends React.Component {
         const {todo} = this.props;
 
         return(
-            <div onClick={this.toggleTodo}>{todo}</div>
+            <div onClick={this.toggleTodo}>{todo.text}</div>
         );
     }
-
+    
+    //toggle if todo is completed or not
     toggleTodo = () => {
-        
+
     }
 
 }
