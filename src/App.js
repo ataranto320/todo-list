@@ -40,6 +40,9 @@ class App extends React.Component {
     }
   }
 
+  //function to add items to todos
+  addTodo = (todo) => this.setState({ todos: [...this.state.todos, todo] })
+
 }
 
 export default App;
