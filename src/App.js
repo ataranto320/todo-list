@@ -30,7 +30,9 @@ class App extends React.Component {
   componenetDidMount = () => {
     const todos = localStorage.getItem('todos');
     if(todos) {
-      console.log('has todos', todos);
+      const savedTodos = JSON.parse(todos);
+      //update state - pass object
+      this.setState({ todos: savedTodos });
     } else {
       console.log('no todos');
     }
