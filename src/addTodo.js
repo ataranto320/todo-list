@@ -1,6 +1,6 @@
 import React from 'react';
 
-class addTodo extends React.Component {
+class AddTodo extends React.Component {
 
     render() {
         return();
@@ -8,4 +8,4 @@ class addTodo extends React.Component {
 
 }
 
-export default addTodo;
+export default AddTodo;
