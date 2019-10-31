@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css';
 
 class TodoItem extends React.Component {
 
@@ -7,7 +8,7 @@ class TodoItem extends React.Component {
         const {todo} = this.props;
 
         return(
-            <div onClick={this.toggleTodo}>{todo.text}</div>
+            <div className="todoItem" onClick={this.toggleTodo}>{todo.text}</div>
         );
     }
     

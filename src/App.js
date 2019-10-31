@@ -1,9 +1,6 @@
 import React from 'react';
-import TodoList from './todoList';
-// import TodoItem from './todoItem';
-import AddTodo from './addTodo';
-// import logo from './logo.svg';
-// import './App.css';
+import TodoList from './TodoList/todoList';
+import AddTodo from './AddTodo/addTodo';
 
 class App extends React.Component {
 
@@ -21,7 +18,6 @@ class App extends React.Component {
     return (
     <div>
       <TodoList updatedTodoFn={this.updateTodo} todos={this.state.todos}></TodoList>
-      <TodoItem></TodoItem>
       <AddTodo addTodoFn={this.addTodo}></AddTodo>
     </div>
     );
@@ -60,6 +56,7 @@ class App extends React.Component {
       else 
       return _todo
     });
+    this.setState({ todos: newTodos });
     console.log(newTodos);
   }
 }

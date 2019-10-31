@@ -1,9 +1,8 @@
 import React from 'react';
-import TodoItem from './todoItem';
-// ../
+import TodoItem from '../TodoItem/todoItem';
 
 class TodoList extends React.Component {
-
+    
     render() {
         const {todos} = this.props;
 
