@@ -5,6 +5,8 @@
   "private": true,
   "dependencies": {
     "acorn": "^7.2.0",
+    "dot-prop": "^5.2.0",
+    "elliptic": "^6.5.3",
     "handlebars": "^4.7.6",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.19",
