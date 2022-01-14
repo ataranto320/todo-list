@@ -12,7 +12,7 @@
     "kind-of": "^6.0.3",
     "lodash": "^4.17.20",
     "minimist": "^1.2.5",
-    "node-forge": "^0.10.0",
+    "node-forge": "^1.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "^3.4.3",
